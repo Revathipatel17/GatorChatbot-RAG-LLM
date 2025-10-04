@@ -20,32 +20,43 @@ Built using LangChain, Hugging Face Transformers, FAISS/Chroma, and Gradio, it e
 🛡️ Optional Enhancements: Guardrails, monitoring, Dockerization, and latency tracking support.
 
 🚀 Quick Setup
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/<your-username>/Gator-RAG-Chatbot.git
 cd Gator-RAG-Chatbot
 
+
 2️⃣ Create and Activate Virtual Environment
+
 python3 -m venv venv
-source venv/bin/activate       
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+
 
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
-4️⃣ Add API Keys
 
+4️⃣ Add API Keys
 Create a .env file in the root directory:
 
 SERPAPI_API_KEY=your-serpapi-key
 
 💡 How to Run
-# Step 1 – Index uploaded documents
+
+Step 1 – Index uploaded documents
+
 python ingestion.py
 
-# Step 2 – Start RAG and LLM pipeline
+
+Step 2 – Start RAG and LLM pipeline
+
 python chatbot.py
 
-# Step 3 – Launch Gradio Web App
-💡 How to Run
+
+Step 3 – Launch Gradio Web App
+
 python gradio_app.py
 
 
@@ -79,9 +90,15 @@ Ask contextual questions like:
 
 Get an answer with citations and reference snippets.
 
-👨‍💻 Author
+🛠 Troubleshooting
 
-Revathi Patel Marri
-📧 revathipatel.marri0304@gmail.com
+If Excel or PDF ingestion fails:
+
+pip install openpyxl msoffcrypto-tool pypdf
+
+
+To switch LLM models:
+
+model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 ✨ A project demonstrating applied RAG and LLM engineering for knowledge retrieval, reasoning, and explainable AI.

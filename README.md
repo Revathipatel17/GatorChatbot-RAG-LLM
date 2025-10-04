@@ -46,12 +46,11 @@ Then visit: http://127.0.0.1:7861
 
 📂 Project Structure
 RAG_Chatbot/
-│
-├── chatbot.py          # LLM + RAG + Web search logic
-├── ingestion.py        # Document loader + embeddings + vector DB
-├── gradio_app.py       # Gradio interface
-├── requirements.txt    # Python dependencies
-└── README.md
+1. chatbot.py         
+2. ingestion.py       
+3. gradio_app.py       
+4. requirements.txt    
+5. README.md
 
 📝 Notes
 

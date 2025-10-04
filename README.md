@@ -51,12 +51,11 @@ python gradio_app.py
 Then open your browser at → http://127.0.0.1:7861
 
 📂 Gator-RAG-Chatbot/
-│
-├── 🧠 ingestion.py        # Handles document loading, chunking, embeddings, vector DB
-├── 🤖 chatbot.py          # Core RAG logic and LLM integration
-├── 💬 gradio_app.py       # Web interface for chat and web search
-├── 📦 requirements.txt    # Python dependencies list
-└── 📝 README.md           # Project documentation
+🧠 ingestion.py        # Handles document loading, chunking, embeddings, vector DB
+🤖 chatbot.py          # Core RAG logic and LLM integration
+💬 gradio_app.py       # Web interface for chat and web search
+📦 requirements.txt    # Python dependencies list
+📝 README.md           # Project documentation
 
 
 🧱 Technologies Used

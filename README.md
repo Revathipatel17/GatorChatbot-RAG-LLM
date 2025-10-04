@@ -45,18 +45,20 @@ python ingestion.py
 python chatbot.py
 
 # Step 3 – Launch Gradio Web App
+💡 How to Run
 python gradio_app.py
 
 
 Then open your browser at → http://127.0.0.1:7861
 
+🧩 Project Structure
 📂 Gator-RAG-Chatbot/
-🧠 ingestion.py        # Handles document loading, chunking, embeddings, vector DB
-🤖 chatbot.py          # Core RAG logic and LLM integration
-💬 gradio_app.py       # Web interface for chat and web search
-📦 requirements.txt    # Python dependencies list
-📝 README.md           # Project documentation
-
+│
+├── 🧠 ingestion.py        # Handles document loading, chunking, embeddings, vector DB
+├── 🤖 chatbot.py          # Core RAG logic and LLM integration
+├── 💬 gradio_app.py       # Web interface for chat and web search
+├── 📦 requirements.txt    # Python dependencies list
+└── 📝 README.md           # Project documentation
 
 🧱 Technologies Used
 Category	Tools / Frameworks
@@ -76,16 +78,6 @@ Ask contextual questions like:
 “What are the performance metrics discussed in Section 3?”
 
 Get an answer with citations and reference snippets.
-
-🛠 Troubleshooting
-
-If Excel or PDF ingestion fails:
-
-pip install openpyxl msoffcrypto-tool pypdf
-
-To switch LLM models:
-
-model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 👨‍💻 Author
 
